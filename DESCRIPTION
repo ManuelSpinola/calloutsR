@@ -1,16 +1,27 @@
 Package: calloutsR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Callouts Personalizados en Documentos Quarto y R Markdown
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Authors@R: 
+    person(given = "Manuel",
+           family = "Spínola",
+           role = c("aut", "cre"),
+           email = "mspinola10@gmail.com")
+Description: Proporciona funciones sencillas para insertar bloques de 
+    callout personalizados (con estilos CSS como rojo, azul, etc.) en 
+    documentos Quarto o R Markdown.
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports:
+    knitr,
+    htmltools,
+    rmarkdown
+Suggests:
+    testthat (>= 3.0.0),
+    devtools
+Config/testthat/edition: 3
+URL: https://github.com/ManuelSpinola/calloutsR
+BugReports: https://github.com/ManuelSpinola/calloutsR/issues

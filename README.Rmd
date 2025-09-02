@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# calloutsR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+El paquete **calloutsR** permite crear bloques de estilo tipo "callout" en documentos R Markdown o Quarto.
+
+## Installation
+
+You can install the development version of calloutsR from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("ManuelSpinola/calloutsR")
+```
+
+## Example
+
+This is a basic example:
+
+
+```{r}
+library(calloutsR)
+
+callout_block_md(
+  title = "Hipótesis y método científico",
+  texts = c(
+    "Primera viñeta: Hipótesis científica",
+    "Segunda viñeta: Método hipotético-deductivo",
+    "Tercera viñeta: Limitaciones en ecología"
+  ),
+  icon = "🐾",
+  bgcolor = "#e0f7fa",
+  color = "#006064"
+)
+```
+
+
